@@ -188,9 +188,12 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 Container(
-                  color: Colors.blue,
-                  alignment: Alignment.bottomLeft,
+                  color: const Color.fromARGB(45, 33, 149, 243),
+                  alignment: Alignment.center,
                   child: TextButton(
                     style: ButtonStyle(
                       foregroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 255, 255, 255)),
@@ -203,7 +206,7 @@ class HomePage extends StatelessWidget {
                     },
                     child: const Text(
                       'دخول',
-                      style: TextStyle(fontSize: 25),
+                      style: TextStyle(fontSize: 25, color: Colors.black),
                     ),
                   ),
                 ),
