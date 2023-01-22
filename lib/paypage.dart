@@ -31,7 +31,7 @@ class Pay extends StatelessWidget {
                     decoration: InputDecoration(
                       border: UnderlineInputBorder(),
                       //labelText: 'Enter Name',
-                      hintText: "رقم البطاقة 16 رقم ",
+                      labelText: "رقم البطاقة 16 رقم ",
                     ),
                   ),
                 ),
@@ -56,7 +56,7 @@ class Pay extends StatelessWidget {
                         decoration: InputDecoration(
                           border: UnderlineInputBorder(),
                           //labelText: 'Enter Name',
-                          hintText: "تاريخ الانتهاء",
+                          labelText: "تاريخ الانتهاء",
                         ),
                       ),
                       SizedBox(
@@ -66,7 +66,7 @@ class Pay extends StatelessWidget {
                         decoration: InputDecoration(
                           border: UnderlineInputBorder(),
                           //labelText: 'Enter Name',
-                          hintText: "اسم حامل البطاقة",
+                          labelText: "اسم حامل البطاقة",
                         ),
                       ),
                     ],
