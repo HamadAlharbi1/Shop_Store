@@ -11,7 +11,13 @@ class HomePage extends StatelessWidget {
           backgroundColor: const Color.fromRGBO(37, 150, 190, 100),
           title: Title(
             color: Colors.white,
-            child: const Text('السنيدي'),
+            child: Container(
+              alignment: Alignment.topRight,
+              child: const Text(
+                'السنيدي',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
           ),
         ),
         body: ListView(

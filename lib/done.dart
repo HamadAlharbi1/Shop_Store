@@ -10,7 +10,7 @@ class ThankYou extends StatelessWidget {
       alignment: Alignment.center,
       child: const Text(
         ' تم الدفع بنجاح ..شكرا ',
-        style: TextStyle(fontSize: 50),
+        style: TextStyle(fontSize: 30),
       ),
     ));
   }

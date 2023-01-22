@@ -8,11 +8,17 @@ class Pay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("طريقة الدفع",
-              style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.normal)),
+          title: Container(
+            alignment: Alignment.center,
+            child: const Text("طريقة الدفع",
+                style: TextStyle(color: Color.fromARGB(255, 0, 0, 0), fontSize: 30, fontWeight: FontWeight.normal)),
+          ),
           backgroundColor: Colors.white,
         ),
-        body: ListView(children: [
+        body: ListView(padding: const EdgeInsets.all(25), children: [
+          const SizedBox(
+            height: 70,
+          ),
           Container(
             padding: const EdgeInsets.all(20),
             decoration: const BoxDecoration(
@@ -21,19 +27,14 @@ class Pay extends StatelessWidget {
             child: Row(
               children: const [
                 Expanded(
-                  //crossAxisAlignment: CrossAxisAlignment.start,
-                  child: Text('بطاقة مدى',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      )),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: UnderlineInputBorder(),
+                      //labelText: 'Enter Name',
+                      hintText: "رقم البطاقة 16 رقم ",
+                    ),
+                  ),
                 ),
-                Text('اضافة',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 44, 86, 104),
-                      fontSize: 24,
-                    )),
               ],
             ),
           ),
@@ -51,72 +52,26 @@ class Pay extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
-                      Text('MADA ****4322',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 24,
-                          )),
-                      SizedBox(
-                        height: 12,
+                      TextField(
+                        decoration: InputDecoration(
+                          border: UnderlineInputBorder(),
+                          //labelText: 'Enter Name',
+                          hintText: "تاريخ الانتهاء",
+                        ),
                       ),
-                      Text('Exp. 08/29',
-                          style: TextStyle(color: Color(0xFFc7c9ca), fontSize: 20, fontWeight: FontWeight.normal)),
+                      SizedBox(
+                        height: 25,
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                          border: UnderlineInputBorder(),
+                          //labelText: 'Enter Name',
+                          hintText: "اسم حامل البطاقة",
+                        ),
+                      ),
                     ],
                   ),
                 ),
-              ],
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(30),
-            decoration: const BoxDecoration(
-              border: Border(
-                top: BorderSide(width: 1.0, color: Colors.grey),
-                bottom: BorderSide(width: 0.5, color: Colors.grey),
-              ),
-            ),
-            child: Row(
-              children: const [
-                Expanded(
-                  child: Text('بطاقة فيزا',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ),
-                Text('اضافة',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 44, 86, 104),
-                      fontSize: 24,
-                    )),
-              ],
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(30),
-            decoration: const BoxDecoration(
-              border: Border(
-                top: BorderSide(width: 1.0, color: Colors.grey),
-                bottom: BorderSide(width: 1.0, color: Colors.grey),
-              ),
-            ),
-            child: Row(
-              children: const [
-                Expanded(
-                  //crossAxisAlignment: CrossAxisAlignment.start,
-                  child: Text('بطاقة ماستر كارد',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ),
-                Text('اضافة',
-                    style: TextStyle(
-                      color: Color.fromARGB(255, 44, 86, 104),
-                      fontSize: 24,
-                    )),
               ],
             ),
           ),
@@ -125,7 +80,7 @@ class Pay extends StatelessWidget {
           ),
           Container(
             alignment: Alignment.center,
-            child: TextButton(
+            child: ElevatedButton(
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 47, 87, 95)),
               ),
@@ -138,7 +93,8 @@ class Pay extends StatelessWidget {
               child: const Text(
                 'الدفع',
                 style: TextStyle(
-                  fontSize: 50,
+                  fontSize: 30,
+                  color: Colors.white,
                 ),
               ),
             ),
