@@ -8,7 +8,7 @@ class Pay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Payment Method",
+          title: const Text("طريقة الدفع",
               style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.normal)),
           backgroundColor: Colors.white,
         ),
@@ -22,14 +22,14 @@ class Pay extends StatelessWidget {
               children: const [
                 Expanded(
                   //crossAxisAlignment: CrossAxisAlignment.start,
-                  child: Text('Credit or debit card',
+                  child: Text('بطاقة مدى',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       )),
                 ),
-                Text('Add',
+                Text('اضافة',
                     style: TextStyle(
                       color: Color.fromARGB(255, 44, 86, 104),
                       fontSize: 24,
@@ -51,7 +51,7 @@ class Pay extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: const [
-                      Text('MasterCard ****4322',
+                      Text('MADA ****4322',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 24,
@@ -59,7 +59,7 @@ class Pay extends StatelessWidget {
                       SizedBox(
                         height: 12,
                       ),
-                      Text('Exp. 07/26',
+                      Text('Exp. 08/29',
                           style: TextStyle(color: Color(0xFFc7c9ca), fontSize: 20, fontWeight: FontWeight.normal)),
                     ],
                   ),
@@ -78,14 +78,14 @@ class Pay extends StatelessWidget {
             child: Row(
               children: const [
                 Expanded(
-                  child: Text('PayPal',
+                  child: Text('بطاقة فيزا',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       )),
                 ),
-                Text('Add',
+                Text('اضافة',
                     style: TextStyle(
                       color: Color.fromARGB(255, 44, 86, 104),
                       fontSize: 24,
@@ -105,14 +105,14 @@ class Pay extends StatelessWidget {
               children: const [
                 Expanded(
                   //crossAxisAlignment: CrossAxisAlignment.start,
-                  child: Text('EBT SNAP card',
+                  child: Text('بطاقة ماستر كارد',
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       )),
                 ),
-                Text('Add',
+                Text('اضافة',
                     style: TextStyle(
                       color: Color.fromARGB(255, 44, 86, 104),
                       fontSize: 24,
@@ -136,9 +136,9 @@ class Pay extends StatelessWidget {
                 );
               },
               child: const Text(
-                'Pay',
+                'الدفع',
                 style: TextStyle(
-                  fontSize: 70,
+                  fontSize: 50,
                 ),
               ),
             ),

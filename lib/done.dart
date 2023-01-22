@@ -8,7 +8,10 @@ class ThankYou extends StatelessWidget {
     return Scaffold(
         body: Container(
       alignment: Alignment.center,
-      child: const Text(' تم الدفع بنجاح ..شكرا '),
+      child: const Text(
+        ' تم الدفع بنجاح ..شكرا ',
+        style: TextStyle(fontSize: 50),
+      ),
     ));
   }
 }
