@@ -14,7 +14,7 @@ class Products extends StatelessWidget {
           title: Title(
               color: Colors.white,
               child: const Text(
-                'السنيدي',
+                'السنيدي  .',
                 style: TextStyle(fontSize: 15),
               )),
         ),
@@ -139,10 +139,7 @@ class Products extends StatelessWidget {
                               foregroundColor: MaterialStateProperty.all<Color>(const Color.fromARGB(255, 47, 87, 95)),
                             ),
                             onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(builder: (context) => const Cart()),
-                              );
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Cart()));
                             },
                             child: const Text(
                               'اضافة للسلة',
